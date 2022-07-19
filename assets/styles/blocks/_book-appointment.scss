@@ -1,0 +1,33 @@
+.book-appointment {
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 219, 255, 0.18) 97.38%);
+
+    &__backgraund {
+        width: 1170px;
+        height: 341px;
+    }
+
+    &__container {
+        display: flex;
+        background: #40A3F8;
+        border-radius: 12px;
+        margin: 200px auto;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 70px 90px 0;
+    }
+
+    &__doctor {
+        background: url(/assets/images/smiling_medical.png)  no-repeat;
+        width: 1000px;
+        height: 452px;
+        margin-top: -110px;
+    }
+}

@@ -1,0 +1,165 @@
+.header {
+    background: linear-gradient(rgba(156, 216, 219, 0) 0%, rgba(128, 192, 214, 0.18) 97.38%);
+
+    &-container {
+        width: 1600px;
+        height: 880px;
+    }
+    
+    &__photo-doctor {
+        position: relative;
+        width: 978px;
+        height: 652px;
+        left: -270px;
+        top: 20px;
+        background: url('/assets/images/photo-doctor.png') no-repeat center;
+    }
+
+    &__shape {
+        position: relative;
+        width: 586px;
+        height: 586px;
+        background: url('/assets/images/header__shape.png') no-repeat center;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 70px;
+        color: $colorBlack;
+        margin: 20px 0;
+
+
+        &-second {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            margin: 30px 0 50px;
+            color: rgba(117, 117, 117, 0.46);
+
+        }
+
+        span {
+            color: $colorBlue;
+            padding-right: 5px;
+        }
+    }
+    
+    &__wrapper {
+        display: flex;
+
+        &-item {
+            display: flex;
+            margin: 80px 100px;
+
+        }
+
+        &-logo {
+           display: flex;
+           margin: 50px auto;
+
+        }
+
+        &-second {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        &-third {
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+        }
+
+    }
+
+    &__logo {
+        height: 27px;
+
+        &-1 {
+            width: 7px;
+            height: 7px;
+            margin: 20px 2px auto;
+        }
+    }
+
+    &__form {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+        border-radius: 8px;
+        width: 566px;
+        height: 86px;
+    }
+}
+
+.form__control {
+    width: 216px;
+    height: 59px;
+    border-radius: 8px;
+    border: none;
+    margin: 13px 13px 14px;
+    background-color: #F5F6FA;
+    padding-left: 50px;
+}
+
+select {
+    background: rgba(245, 246, 250, 0.52);
+    border-radius: 8px;
+    width: 203px;
+    height: 59px;
+    background-color: #F5F6FA;
+    border: none;
+    margin: 13px 13px 14px;
+    padding-left: 50px;
+}
+
+input[type="submit"] {
+    width: 70px;
+    height: 59px;
+    border-radius: 8px;
+    background: #40A3F8 url("/assets/images/Search_button.png")  15px no-repeat;
+    color:#40A3F8;
+    border: none;
+}
+
+.nav {
+    display: flex;
+    margin: auto;
+
+    &__list {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #262323;
+
+        mix-blend-mode: normal;
+        opacity: 0.3;
+
+        &-item {
+            width: 115px;
+            padding-top: 10px;
+        }
+
+
+        &-link {
+            font-family: $fontPopins;
+            text-transform: capitalize;
+
+            &:hover {
+                @include cursorPointer;
+                color: $colorBlue;
+            }
+            &:active {
+                color: #6E5F5F;
+            }
+        }
+    }
+    
+}

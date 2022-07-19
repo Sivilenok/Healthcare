@@ -1,0 +1,59 @@
+.service {
+
+  &__btn {
+      text-align: center;
+  }
+
+  &-wrapper {
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+  }
+    
+  &-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    color: #3D3D3F;
+    text-align: center;
+  }
+
+  &-descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(61, 61, 63, 0.7);
+    padding: 24px 0;
+  }
+
+  &-inner {
+    display: flex;
+  }
+
+  &-item {
+      border-radius: 10px;
+  }
+
+}
+
+input.service__btn {
+    &-1:focus {
+        background-color: #FF7070;
+    }
+
+    &-2:focus {
+        background-color: #40A3F8;
+    }
+
+    &-3:focus {
+        background-color:  #9d64d6 ;
+    }
+    
+}

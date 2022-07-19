@@ -1,0 +1,73 @@
+:root {
+	--large-container: 1200px;
+}
+
+@mixin flex($justCont, $align, $direct) {
+    display: flex;
+    justify-content: $justCont;
+    flex-direction: $direct;
+    align-items: $align;
+}
+
+@mixin textUpCenter($textUp,$textCenter) {
+    text-transform: $textUp;
+    text-align: $textCenter;
+}
+
+@mixin container {
+	width: var(--large-container);
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media (max-width: 1200px) {
+		width: 1024px;
+	}
+
+	@media (max-width: 768px) {
+		width: 771px;
+	}
+}
+
+@mixin posCenter {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin fontSize($count) {
+	font-size: calc($count / 16) + rem;
+}
+
+@mixin fontStyle($fontFamily, $fontWeight, $size) {
+	font-family: $fontFamily;
+	@include fontSize($size);
+	font-weight: $fontWeight;
+}
+
+@mixin remLh($count) {
+	line-height: calc($count / 16) + rem;
+}
+
+@mixin placeholder($color, $font: sans-serif, $size: 14px) {
+	&::placeholder {
+		opacity: 1;
+		text-transform: uppercase;
+		font-family: $font;
+		color: $color;
+		@include fontSize($size);
+	}
+}
+
+@mixin transitionAll {
+    transition: all .3s  ease-in-out;
+}
+
+@mixin cursorPointer {
+    cursor: pointer;
+}

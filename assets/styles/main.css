@@ -1,0 +1,620 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+:root {
+  --large-container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #fff;
+  --basic-font: 16px, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+}
+
+html, body {
+  font: var(--basic-font);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  background: var(--body-color);
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: var(--large-container);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn-blue {
+  width: 142px;
+  height: 47px;
+  background: #40A3F8;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.btn-doctor {
+  width: 200px;
+  height: 50px;
+  background: #40A3F8;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.btn-meet__doctor {
+  width: 200px;
+  height: 50px;
+  background: #40A3F8;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin: 0 500px 50px;
+}
+
+.service__btn-1 {
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  border: none;
+}
+.service__btn-2 {
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  border: none;
+}
+.service__btn-3 {
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  border: none;
+}
+
+.book-appointment__btn {
+  width: 205px;
+  height: 52px;
+  background: #FFFFFF;
+  color: #40A3F8;
+  border-radius: 5px;
+  border: none;
+  margin: 21px 90px;
+}
+
+.header {
+  background: linear-gradient(rgba(156, 216, 219, 0) 0%, rgba(128, 192, 214, 0.18) 97.38%);
+}
+.header-container {
+  width: 1600px;
+  height: 880px;
+}
+.header__photo-doctor {
+  position: relative;
+  width: 978px;
+  height: 652px;
+  left: -270px;
+  top: 20px;
+  background: url("/assets/images/photo-doctor.png") no-repeat center;
+}
+.header__shape {
+  position: relative;
+  width: 586px;
+  height: 586px;
+  background: url("/assets/images/header__shape.png") no-repeat center;
+}
+.header__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: #000000;
+  margin: 20px 0;
+}
+.header__title-second {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 30px 0 50px;
+  color: rgba(117, 117, 117, 0.46);
+}
+.header__title span {
+  color: #40A3F8;
+  padding-right: 5px;
+}
+.header__wrapper {
+  display: flex;
+}
+.header__wrapper-item {
+  display: flex;
+  margin: 80px 100px;
+}
+.header__wrapper-logo {
+  display: flex;
+  margin: 50px auto;
+}
+.header__wrapper-second {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.header__wrapper-third {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+.header__logo {
+  height: 27px;
+}
+.header__logo-1 {
+  width: 7px;
+  height: 7px;
+  margin: 20px 2px auto;
+}
+.header__form {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+  border-radius: 8px;
+  width: 566px;
+  height: 86px;
+}
+
+.form__control {
+  width: 216px;
+  height: 59px;
+  border-radius: 8px;
+  border: none;
+  margin: 13px 13px 14px;
+  background-color: #F5F6FA;
+  padding-left: 50px;
+}
+
+select {
+  background: rgba(245, 246, 250, 0.52);
+  border-radius: 8px;
+  width: 203px;
+  height: 59px;
+  background-color: #F5F6FA;
+  border: none;
+  margin: 13px 13px 14px;
+  padding-left: 50px;
+}
+
+input[type=submit] {
+  width: 70px;
+  height: 59px;
+  border-radius: 8px;
+  background: #40A3F8 url("/assets/images/Search_button.png") 15px no-repeat;
+  color: #40A3F8;
+  border: none;
+}
+
+.nav {
+  display: flex;
+  margin: auto;
+}
+.nav__list {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262323;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.nav__list-item {
+  width: 115px;
+  padding-top: 10px;
+}
+.nav__list-link {
+  font-family: "Poppins";
+  text-transform: capitalize;
+}
+.nav__list-link:hover {
+  cursor: pointer;
+  color: #40A3F8;
+}
+.nav__list-link:active {
+  color: #6E5F5F;
+}
+
+.doctor-men {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 219, 255, 0.18) 97.38%);
+}
+.doctor-men__wrapper {
+  position: relative;
+}
+.doctor-men__wrapper-second {
+  display: flex;
+  width: 1200px;
+}
+.doctor-men__wrapper-third {
+  margin: 152px 50px;
+}
+.doctor-men__item {
+  padding: 0px 40px;
+}
+.doctor-men__header {
+  margin: 75px 0 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 70px;
+  color: #000000;
+}
+.doctor-men__title {
+  margin: -22px 2px 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+}
+.doctor-men__second-title {
+  margin: 16px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.doctor-men__img-1 {
+  margin: 51px;
+  margin-inline: auto;
+  background: url("/assets/images/icons/search.png") no-repeat center 25px;
+}
+.doctor-men__img-2 {
+  margin: 51px;
+  margin-inline: auto;
+  background: url("/assets/images/icons/calendar.png") no-repeat center 15px;
+}
+.doctor-men__img-3 {
+  margin: 51px;
+  margin-inline: auto;
+  background: url("/assets/images/icons/online.png") no-repeat center 20px;
+}
+
+.wrapper-photo {
+  background: url("/assets/images/doctor.png") no-repeat center;
+  width: 120pc;
+  height: 582px;
+  margin: 85px 0;
+}
+.wrapper-third__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  padding: 24px 0;
+}
+.wrapper-third__descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+}
+.wrapper-third__spisok {
+  flex-direction: column;
+  padding: 0 0 24px;
+}
+.wrapper-third__item {
+  margin: 14px 0;
+}
+.wrapper-third__column {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+}
+.wrapper-third__img {
+  padding-right: 18px;
+}
+
+.service__btn {
+  text-align: center;
+}
+.service-wrapper {
+  width: 1200px;
+  height: 640px;
+  margin: 0 auto;
+}
+.service-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  text-align: center;
+}
+.service-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  padding: 24px 0;
+}
+.service-inner {
+  display: flex;
+}
+.service-item {
+  border-radius: 10px;
+}
+
+input.service__btn-1:focus {
+  background-color: #FF7070;
+}
+input.service__btn-2:focus {
+  background-color: #40A3F8;
+}
+input.service__btn-3:focus {
+  background-color: #9d64d6;
+}
+
+.meet__doctor-title {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  padding: 8px 0;
+}
+.meet__doctor-logo {
+  padding-left: 550px;
+  margin: 8px 0;
+}
+.meet__doctor-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 8px 0;
+  color: rgba(61, 61, 63, 0.7);
+}
+.meet__doctor-item {
+  margin: 69px 30px;
+}
+.meet__doctor-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #3D3D3F;
+  margin: 18px 0 1px;
+}
+.meet__doctor-prof {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+}
+.meet__doctor-icon {
+  margin: 17px 50px 20px;
+}
+.meet__doctor-photo1 {
+  background: url(/assets/images/Dr\ Amanda\ Linda\ .png);
+  background-size: cover;
+  height: 250px;
+}
+.meet__doctor-photo2 {
+  background: url(/assets/images/Dr.\ Alisa\ Rahman.png);
+  background-size: cover;
+  height: 250px;
+}
+.meet__doctor-photo3 {
+  background: url(/assets/images/Dr.\ Anthony\ Fauci.png);
+  background-size: cover;
+  height: 250px;
+}
+.meet__doctor-photo4 {
+  background: url(/assets/images/Dr.\ Khalid\ Abbed.png);
+  background-size: cover;
+  height: 250px;
+}
+
+.mobile__app {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 255, 221, 0.455) 97.38%);
+}
+.mobile__app-item {
+  background: url(/assets/images/mobile.png) no-repeat;
+  width: 700px;
+  height: 842px;
+}
+.mobile__app-wrapper {
+  display: flex;
+}
+.mobile__app-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  margin: 200px 0 30px;
+}
+.mobile__app-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+}
+
+.mobile__apps {
+  display: flex;
+  margin: 30px 0;
+}
+.mobile__apps-item1 {
+  background: url("/assets/images/Google Play.png") no-repeat;
+  width: 156px;
+  height: 46px;
+  margin-right: 13px;
+}
+.mobile__apps-item2 {
+  background: url("/assets/images/App Store.png") no-repeat;
+  width: 138px;
+  height: 46px;
+}
+
+.client-reviews {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 219, 255, 0.4) 97.38%);
+}
+.client-reviews__container {
+  width: 1600px;
+  height: 640px;
+  margin: 0 auto;
+}
+.client-reviews__wrapper {
+  margin: 0 130px 100px;
+}
+.client-reviews__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  text-align: center;
+  margin: 93px;
+}
+.client-reviews__photo {
+  width: 63px;
+  height: 63px;
+  margin: 21px 150px;
+}
+.client-reviews__item {
+  width: 370px;
+  margin: 0 33px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.client-reviews__logo {
+  margin: -13px 290px;
+}
+.client-reviews__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 55px;
+  color: #000000;
+  margin: 0 48px;
+  background: url(/assets/images/stars.png) 200px 20px no-repeat;
+}
+.client-reviews__town {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgb(120, 202, 233);
+  margin: 0 45px;
+}
+.client-reviews__opinion {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #454D5D;
+  margin: 16px 45px 32px;
+}
+
+.book-appointment {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 219, 255, 0.18) 97.38%);
+}
+.book-appointment__backgraund {
+  width: 1170px;
+  height: 341px;
+}
+.book-appointment__container {
+  display: flex;
+  background: #40A3F8;
+  border-radius: 12px;
+  margin: 200px auto;
+}
+.book-appointment__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 70px 90px 0;
+}
+.book-appointment__doctor {
+  background: url(/assets/images/smiling_medical.png) no-repeat;
+  width: 1000px;
+  height: 452px;
+  margin-top: -110px;
+}/*# sourceMappingURL=main.css.map */

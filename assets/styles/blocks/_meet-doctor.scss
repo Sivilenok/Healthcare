@@ -1,0 +1,86 @@
+.meet__doctor {
+
+   &-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    color: #3D3D3F;
+    padding: 8px 0;    
+   }
+
+   &-logo {
+    padding-left: 550px;
+    margin: 8px 0;
+   }
+
+   &-descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 8px 0;
+    color: rgba(61, 61, 63, 0.7);
+   }
+
+   &-item {
+    margin: 69px 30px;
+   }
+
+   &-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #3D3D3F;
+    margin: 18px 0 1px;
+   }
+
+   &-prof {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #999999;
+   }
+
+   &-icon {
+    margin: 17px 50px 20px;
+   }
+
+   &-photo1 {
+    background: url(/assets/images/Dr\ Amanda\ Linda\ .png);
+    background-size: cover;
+    height: 250px;
+   }
+
+   &-photo2 {
+    background: url(/assets/images/Dr.\ Alisa\ Rahman.png);
+    background-size: cover;
+    height: 250px;
+   }
+
+   &-photo3 {
+    background: url(/assets/images/Dr.\ Anthony\ Fauci.png);
+    background-size: cover;
+    height: 250px;
+   }
+
+   &-photo4 {
+    background: url(/assets/images/Dr.\ Khalid\ Abbed.png);
+    background-size: cover;
+    height: 250px;
+   }
+
+}
+  

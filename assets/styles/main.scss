@@ -1,0 +1,16 @@
+@import './fonts';
+@import './vars';
+@import './mixins';
+@import './adjustments';
+
+// components
+@import './components/btns';
+
+// blocks
+@import './blocks/header';
+@import './blocks/doctor-men';
+@import './blocks/service';
+@import './blocks/meet-doctor';
+@import './blocks/mobile-app';
+@import './blocks/client-reviews';
+@import './blocks/book-appointment';

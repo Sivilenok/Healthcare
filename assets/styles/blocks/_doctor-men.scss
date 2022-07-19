@@ -1,0 +1,135 @@
+.doctor-men {
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(113, 219, 255, 0.18) 97.38%);
+    
+    &__wrapper {
+        position: relative;
+
+        &-second {
+           display: flex;
+           width: 1200px;
+        }
+
+        &-third {
+            margin: 152px 50px;
+        } 
+    }
+
+    &__item {
+        padding: 0px 40px;
+    }
+
+    &__header {
+        margin: 75px 0 50px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 70px;
+        color: $colorBlack;
+    }
+
+    &__title {
+        margin: -22px 2px 2px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: $colorBlack;
+        text-align: center;
+    }
+
+    &__second-title {
+        margin: 16px 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__img {
+
+        &-1 {
+            margin: 51px;
+            margin-inline: auto;
+            background: url('/assets/images/icons/search.png') no-repeat center 25px;
+        }
+
+        &-2 {
+            margin: 51px;
+            margin-inline: auto;
+            background: url('/assets/images/icons/calendar.png') no-repeat center 15px;
+        }
+
+        &-3 {
+            margin: 51px;
+            margin-inline: auto;
+            background: url('/assets/images/icons/online.png') no-repeat center 20px;
+        }
+
+    }
+}
+
+.wrapper {
+   
+    &-photo {
+        background: url('/assets/images/doctor.png') no-repeat center;
+        width: 120pc;
+        height: 582px;
+        margin: 85px 0;
+    }
+
+    &-third {
+
+        &__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 49px;
+            letter-spacing: 0.02em;
+            color: #3D3D3F;
+            padding: 24px 0;
+
+        }
+
+        &__descr {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+
+            color: rgba(61, 61, 63, 0.7);
+        }
+
+        &__spisok {
+            flex-direction: column;
+            padding: 0 0 24px;
+        }
+
+        &__item {
+            margin: 14px 0;
+
+        }
+
+        &__column {
+            display: flex;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #3D3D3F;
+        }
+
+        &__img {
+            padding-right: 18px;
+        }
+    }
+}
